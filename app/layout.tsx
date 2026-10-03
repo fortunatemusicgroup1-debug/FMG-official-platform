@@ -1,0 +1,3 @@
+import "./globals.css"; import Link from "next/link";
+export const metadata={title:"FORTUNATE MUSIC GROUP | FMG",description:"Independent music distribution and artist services by FORTUNATE MUSIC GROUP."};
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="en"><body><header className="site-header"><Link href="/" className="brand"><b>FMG</b><small>FORTUNATE MUSIC GROUP</small></Link><nav><Link href="/about">About</Link><Link href="/contact">Contact</Link><Link href="/login">Login</Link><Link href="/register" className="cta">Join FMG</Link></nav></header>{children}<footer>© {new Date().getFullYear()} FORTUNATE MUSIC GROUP. All rights reserved.</footer></body></html>}

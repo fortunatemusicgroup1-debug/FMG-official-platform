@@ -1,0 +1,2 @@
+import {login} from "../server-actions";
+export default function Login(){return <main className="page"><div className="form"><div className="eyebrow">FMG ACCOUNT</div><h1>Artist Login</h1><form action={login}><label className="label">Email</label><input className="input" name="email" type="email" required/><label className="label">Password</label><input className="input" name="password" type="password" required/><button className="button">Sign in</button></form></div></main>}
